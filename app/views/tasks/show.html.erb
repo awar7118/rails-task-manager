@@ -3,4 +3,9 @@
 
 <h3> Completed ? - <%= @task.completed %></h1>
 
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+
 <%= link_to 'Go Back To Tasks', '/tasks' %>

@@ -8,4 +8,10 @@ Rails.application.routes.draw do
   post '/tasks', to: 'tasks#create'
   # Creating route to display details of task
   get '/tasks/:id', to: 'tasks#show', as: :task
+  # Creating route to get the html form
+  get '/tasks/:id/edit', to: 'tasks#edit'
+  # Creating route to patch.
+  patch '/tasks/:id', to: 'tasks#update'
+  # Creating route to delete
+  delete '/tasks/:id', to: 'tasks#destroy'
 end
