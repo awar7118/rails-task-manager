@@ -33,7 +33,6 @@ class TasksController < ApplicationController
     redirect_to '/tasks'
   end
 
-
   private
 
   def find_task
